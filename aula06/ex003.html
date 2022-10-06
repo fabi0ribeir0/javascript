@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Criando Java Script</title>
+    <style>
+        body {
+            background-color: rgb(56, 56, 253);
+            color: rgb(180, 179, 179);
+            font: normal 1.5em arial
+        }
+    </style>
+</head>
+<body>
+    <h1>Ola, </h1>
+    <p>curse no more</p>
+    <script>
+         var n1 = prompt('Digite um número')
+         var n2 = prompt('Digite outro número')
+         var s = n1 + n2
+         alert('a somas dos numers digitados é: ' + s) // Concatenação
+         // (number + numer) para adição
+         // (string + string) para concatenação)
+         /*
+            A concatenação aconteceu no caso acima por que o valor digitado no prompt é considerado uma string
+            Para que isso não aconteça devemos transformar os valores digitados no prompt em number
+            para isso podemos usar: 
+            Number.parseInt(n) para números inteiros
+            Number.parseFloat(n) para números Reais ( com casas decimais exp 5.5)
+            para saber como olhar ex003,1
+         */          
+    </script>
+</body>
+</html>
