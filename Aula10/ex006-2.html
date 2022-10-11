@@ -21,11 +21,15 @@
     </style>
 </head>
 <body>
-    <div id="area" onclick="clicar()" onmouseenter="ment()" onmouseout="mout()">
+    <div id="area">
         Interaja...
     </div>
     <script>
         var a = document.getElementById('area')
+        a.addEventListener('click', clicar)
+        a.addEventListener('mouseenter', ment)
+        a.addEventListener('mouseout', mout)
+
         function clicar() {
             if (a.innerText == "Interaja...") {
                 a.innerText = 'Clicou'
