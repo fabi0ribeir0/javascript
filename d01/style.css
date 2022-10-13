@@ -1,0 +1,99 @@
+@charset "UTF-8";
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    position: relative;
+    background-color: rgb(252, 201, 126);
+    width: 95vw;
+    height: 95vh;
+}
+
+header {
+    margin: 30px 0px;
+    text-align: center;
+    color: whitesmoke;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.658);
+}
+
+main {
+    margin: auto;
+    width: 60vw;
+    height: 40vh;    
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 2px 2px 5px 2px rgba(0, 0, 0, 0.404);
+
+}
+
+
+p {
+    text-align: center;
+    font-weight: bold;
+    padding: 20px;
+}
+
+div#manha{
+    display: none;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    width: 250px;
+    height: 250px;
+    background: url('imagem/manha.jpg') left center no-repeat;
+    background-size: cover;
+    border-radius: 50%;
+    box-shadow: 2px 2px 5px 3px rgba(0, 0, 0, 0.425);
+}
+
+div#tarde{
+    display: none;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    width: 250px;
+    height: 250px;
+    background: url('imagem/tarde.jpg') left center no-repeat;
+    background-size: cover;
+    border-radius: 50%;
+    box-shadow: 2px 2px 5px 3px rgba(0, 0, 0, 0.425);
+}
+
+div#noite{
+    display: none;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    width: 250px;
+    height: 250px;
+    background: url('imagem/noite.jpg') left center no-repeat;
+    background-size: cover;
+    border-radius: 50%;
+    box-shadow: 2px 2px 5px 3px rgba(0, 0, 0, 0.425);
+}
+
+footer {
+    position: fixed;
+    bottom: 0px;
+    width: 98vw;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    border: 2px solid black;
+    color: whitesmoke;
+    background-color: black;
+    padding: 5px;
+}
+
+footer  a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+footer  a:hover {
+    text-decoration: underline;
+}

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hora do Dia</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Hora do Dia</h1>
+    </header>
+    <main>
+        <div class="container">
+            <p id="ola">oi</p>
+            <div id="manha" class="img"></div>
+            <div id="tarde" class="img"></div>
+            <div id="noite" class="img"></div>
+        </div>
+        
+    </main>
+    <footer>
+        <div>Acesse minhas criações em <a href="https://github.com/fabi0ribeir0" target="_blank" rel="external">github.com/fabi0ribeir0</a></div>
+    </footer>
+    <script>
+        var man = document.getElementById('ola')
+        var agora = new Date()
+        var hora = agora.getHours()
+        var min = agora.getMinutes()
+        if (hora >= 00 && hora < 12) {
+            man.innerText = `Bom dia! Agora são ${hora}:${min} horas.`
+            manha.style.display = 'block'
+        }
+        else if (hora < 18) {
+            man.innerText = `Boa tarde! Agora são ${hora}:${min} horas.`
+            document.body.style.backgroundColor = 'rgb(253, 158, 16)'
+            tarde.style.display = 'block'
+        }
+        else {
+            man.innerText = `Boa noite! Agora são ${hora}:${min} horas.`
+            document.body.style.backgroundColor = 'rgb(20, 28, 0)'
+            noite.style.display = 'block'
+        }
+    </script>  
+</body>
+</html>
