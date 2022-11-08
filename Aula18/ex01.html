@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TESTE</title>
+</head>
+<body>
+    <h1>Teste</h1>
+    <div>
+        Digite um numero:<input type="number" name="txtn" id="txtn">
+    </div>
+    <div>
+        <input type="button" value="Par ou Impar?" onclick="parimp()">
+    </div>
+    <div id="res">
+
+    </div>
+    <script>       
+        
+        function parimp() {
+            let x = document.getElementById('txtn').value
+
+            function parimp(n) {
+
+                if (n%2==0) {
+                    return 'Par'
+                }
+                else {
+                    return 'Impar'
+                }
+            }
+
+        }
+
+        
+
+        let res = parimp(x)
+
+            alert(res)
+
+    </script>
+</body>
+</html>

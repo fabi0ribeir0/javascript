@@ -7,6 +7,6 @@ function parimpar(n){
     }
 }
 
-let res = parimpar(2)
+let res = parimpar(4)
 
 console.log(res)
